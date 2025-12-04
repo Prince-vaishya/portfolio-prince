@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="static/images/favicon2.png" sizes="16x16">
+    <title>Prince Vaishya - Portfolio</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script defer src="static/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">
+            <img src="static/images/logo5.png" alt="Prince Vaishya Logo">
+        </div>
+
+        <!-- Hamburger for mobile (doesn't interfere with flex layout) -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Home Section -->
+    <section id="home">
+        <canvas id="stars-bg"></canvas>
+        <div class="intro" class="reveal">
+            <h1><span class="typing-text"></span></h1>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="reveal">
+        <h2>About Me</h2>
+        <p>I am an aspiring Data Scientist with a strong passion for Artificial Intelligence and Machine Learning.
+            Currently pursuing my education from the University of West of England, I have been actively engaging in
+            projects and challenges that enhance my understanding of data structures and algorithms. My commitment to
+            continuous learning is evident through my participation in initiatives like the #30DaysDSA Challenge, where
+            I delve into complex problems to sharpen my coding skills and problem-solving abilities.</p>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+        <h2>Skills & Interests</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <label>Data Science & Machine Learning</label>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <label>Digital Marketing</label>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="75%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <label>Video Editing</label>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <label>Economics & Business Analysis</label>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="70%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <label>Music & Instruments</label>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="60%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <label>Astronomy</label>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="85%"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="reveal">
+        <h2>Portfolio</h2>
+        <p>Here’s a showcase of some of the work I’ve done in AI/ML and data science. Check them out!</p>
+
+        <div class="project-grid">
+
+            <!-- Project 1: Titanic Survival Prediction -->
+            <div class="project-card reveal">
+                <div class="project-info">
+                    <h3>Titanic Survival Prediction</h3>
+                    <p>Predicting survival of passengers on the Titanic using machine learning models.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/example/titanic-ml" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <button class="view-details">View</button>
+                    </div>
+                    <div class="project-details">
+                        <ul>
+                            <li><strong>Tech:</strong> Python, Pandas, Scikit-learn, Matplotlib, Seaborn</li>
+                            <li><strong>Features:</strong> Data cleaning, feature engineering, logistic regression &
+                                decision tree models</li>
+                            <li><strong>Dataset:</strong> Kaggle Titanic Dataset</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Handwritten Digit Recognition -->
+            <div class="project-card reveal">
+                <div class="project-info">
+                    <h3>Handwritten Digit Recognition</h3>
+                    <p>Classifying handwritten digits using neural networks on the MNIST dataset.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/example/mnist-classifier" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <button class="view-details">View</button>
+                    </div>
+                    <div class="project-details">
+                        <ul>
+                            <li><strong>Tech:</strong> Python, TensorFlow/Keras, Numpy, Matplotlib</li>
+                            <li><strong>Features:</strong> CNN model, image preprocessing, model evaluation</li>
+                            <li><strong>Dataset:</strong> MNIST Dataset</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Movie Recommendation System -->
+            <div class="project-card reveal">
+                <div class="project-info">
+                    <h3>Movie Recommendation System</h3>
+                    <p>Building a recommendation engine to suggest movies based on user ratings.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/example/movie-recommender" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <button class="view-details">View</button>
+                    </div>
+                    <div class="project-details">
+                        <ul>
+                            <li><strong>Tech:</strong> Python, Pandas, Scikit-learn, Surprise Library</li>
+                            <li><strong>Features:</strong> Collaborative filtering, matrix factorization, recommendation
+                                evaluation</li>
+                            <li><strong>Dataset:</strong> MovieLens Dataset</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Sentiment Analysis on Tweets -->
+            <div class="project-card reveal">
+                <div class="project-info">
+                    <h3>Twitter Sentiment Analysis</h3>
+                    <p>Classifying tweets as positive, negative, or neutral using NLP techniques.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/example/twitter-sentiment" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <button class="view-details">View</button>
+                    </div>
+                    <div class="project-details">
+                        <ul>
+                            <li><strong>Tech:</strong> Python, NLTK, Scikit-learn, Pandas</li>
+                            <li><strong>Features:</strong> Text preprocessing, sentiment classification, visualization
+                            </li>
+                            <li><strong>Dataset:</strong> Kaggle Twitter Sentiment Dataset</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch with me for projects or opportunities, fill out the form below.</p>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-status"></p>
+        <a href="static/files/" class="resume-btn" download>
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/princevaishya/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Prince-vaishya" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/PrinceNative911" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <p>© 2025 Prince Vaishya</p>
+    </footer>
+
+
+    <button id="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+
+</html>
